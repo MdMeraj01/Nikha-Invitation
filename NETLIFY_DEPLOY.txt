@@ -1,0 +1,23 @@
+NETLIFY DEPLOY INSTRUCTIONS
+
+This is a static HTML/CSS/JavaScript website. No build command is required.
+
+OPTION A — Netlify Drop
+1. Extract the ZIP file.
+2. Open the nikha_invitation_website folder.
+3. Confirm index.html is directly inside this folder and the assets folder contains nikha-invitation-original.pdf.
+4. In Netlify, open https://app.netlify.com/drop
+5. Drag the nikha_invitation_website folder (or a ZIP containing these root files) into the drop area.
+6. After deployment, open the published URL and test entering a guest name and downloading the PDF.
+
+OPTION B — Git repository
+1. Upload all files in this folder to the root of your Git repository.
+2. In Netlify, import the repository.
+3. Build command: leave blank.
+4. Publish directory: .
+
+IMPORTANT
+- Keep assets/nikha-invitation-original.pdf at this exact relative path.
+- The PDF editing library loads from jsDelivr, so visitors need an internet connection.
+- The guest name is added in the visitor's browser. No backend is needed.
+- Test the deployed site after publishing.
